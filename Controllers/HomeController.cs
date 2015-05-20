@@ -10,8 +10,10 @@ namespace Test.Controllers
     {
         //
         // GET: /Home/
-        public ActionResult Index()
+        [HttpGet]
+        public ActionResult Index(uint id)
         {
+            ViewBag.IdHojaRuta = id;
             return View();
         }
 	}
