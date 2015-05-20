@@ -10,5 +10,10 @@ namespace Test.Controllers
         {
             return View();
         }
+
+        public ActionResult Create()
+        {
+            return new JsonResult();
+        }
 	}
 }
