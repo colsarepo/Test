@@ -13,7 +13,7 @@ namespace Test.Controllers
         [HttpGet]
         public ActionResult Index(uint id)
         {
-            ViewBag.IdHojaRuta = id;
+            ViewBag.IdHojaRuta = id.ToString();
             return View();
         }
 	}
